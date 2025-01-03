@@ -16,6 +16,11 @@ list[2].textContent = " Task 3 Text Changed "
 
 
 
-document.querySelector('footer').textContent = "Have a great day"
+const footer = document.querySelector('#footer')
+footer.textContent += "  ©copyright Protected"
+const newPara = document.createElement('p')
+newPara.textContent = "Have a Great Day"
+footer.appendChild(newPara)
+
 
 }
